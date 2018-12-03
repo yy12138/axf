@@ -1,0 +1,25 @@
+// 需要在多个组件中使用的css(通用的css)
+.main{
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  bottom: 4.9rem;
+  background-color: #efefef;
+  overflow-y:scroll;
+}
+img[lazy=loading] {
+  background: url("./images/loading.gif") center center no-repeat;
+  -webkit-background-size: 20px 20px;
+  background-size: 20px 20px;
+}
+.sex>span.checked{
+  &:before{
+    background-image: url("./images/checked.png");
+    background-color: @color-background;
+    border-color: @color-background;
+  }
+}
+.hidden{
+  visibility: hidden;
+}
